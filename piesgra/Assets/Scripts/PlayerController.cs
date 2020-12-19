@@ -31,4 +31,47 @@ public class PlayerController : MonoBehaviour
             playerRb.AddForce(new Vector2(0, jumpForce));
         }
     }
+
+    public void changeDogLevel(int dogLevel)
+    {
+        switch (dogLevel)
+        {
+            case 0: alphaWolf(); break;
+            case 1: wolf(); break;
+            case 2: mastif(); break;
+            case 3: kundel(); break;
+            case 4: owczarek(); break;
+            case 5: mops(); break;
+        }
+    }
+
+    void alphaWolf()
+    {
+        Debug.Log("PIES TO TERAZ WILK ALFA");
+    }
+
+    void wolf()
+    {
+        Debug.Log("PIES TO TERAZ WILK");
+    }
+
+    void mastif()
+    {
+        Debug.Log("PIES TO TERAZ MASTIF");
+    }
+
+    void kundel()
+    {
+        Debug.Log("PIES TO TERAZ KUNDEL");
+    }
+
+    void owczarek()
+    {
+        Debug.Log("PIES TO TERAZ OWCZAREK");
+    }
+
+    void mops()
+    {
+        Debug.Log("PIES TO TERAZ MOPS");
+    }
 }
