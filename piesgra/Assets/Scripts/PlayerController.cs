@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Backspace)) Death(); //DEBUG!!!! USUNAC POTEM!!!!
         isGrounded = Physics2D.OverlapCircle(groundDetector.position, 0.15f, groundLayer);
         horizontalAxis = Input.GetAxis("Horizontal");
 
@@ -73,5 +75,13 @@ public class PlayerController : MonoBehaviour
     void mops()
     {
         Debug.Log("PIES TO TERAZ MOPS");
+    }
+
+    public void Death()
+    {
+        //PLAY DEATH SOUND HERE
+        //MAYBE PARTICLES HERE?
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Debug.Log("You died.");
     }
 }
