@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
+    public bool isDebugMode = true;
     public LayerMask groundLayer;
     public float speed;
     public float jumpForce;
@@ -13,21 +15,28 @@ public class PlayerController : MonoBehaviour
     public bool isGrounded;
     [SerializeField] private Transform groundDetector;
     public bool breathingToExist;
-    [SerializeField]private int currentDogIndex;
+    [SerializeField] private int currentDogIndex;
 
-    [SerializeField]private float timeLeftToBreathe;
+    [SerializeField] private float timeLeftToBreathe;
+
+    [SerializeField] private Color[] messageColors;
+
+    public TextMeshProUGUI currentMessage;
+    public Animation textAnim;
 
     // Start is called before the first frame update
     void Start()
     {
         alphaWolf();
         timeLeftToBreathe = 10;
+        currentMessage.text = "";
+        changeDogLevel(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
     // Update is called once per frame
     void Update()
     {
-        DebugStuff(); //DO USUNIECIA
+        if(isDebugMode) DebugStuff(); 
         if(breathingToExist) BreatheTest(10);
         isGrounded = Physics2D.OverlapCircle(groundDetector.position, 0.15f, groundLayer);
         horizontalAxis = Input.GetAxis("Horizontal");
@@ -111,6 +120,10 @@ public class PlayerController : MonoBehaviour
     {
         //PLAY DEATH SOUND HERE
         //MAYBE PARTICLES HERE?
+        currentMessage.gameObject.SetActive(true);
+        currentMessage.color = messageColors[1];
+        currentMessage.text = "You died.";
+        textAnim.Play();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Debug.Log("You died.");
     }
@@ -121,15 +134,26 @@ public class PlayerController : MonoBehaviour
         if(Input.GetButtonDown("Breathe"))
         {
             timeLeftToBreathe = timeToBreathe;
+            currentMessage.gameObject.SetActive(false);
         }
         if(timeLeftToBreathe < 5)
         {
+            currentMessage.gameObject.SetActive(true);
+            currentMessage.color = messageColors[2];
+            currentMessage.text = "5 seconds of air left!";
             Debug.Log("5 seconds left!");
         }
         if(timeLeftToBreathe < 0)
         {
             Death();
         }
+    }
+
+    public void WinMessage()
+    {
+        currentMessage.gameObject.SetActive(true);
+        currentMessage.color = messageColors[0];
+        currentMessage.text = "You won!";
     }
 
 

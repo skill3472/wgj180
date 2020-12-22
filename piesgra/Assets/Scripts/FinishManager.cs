@@ -7,6 +7,7 @@ public class FinishManager : MonoBehaviour
 {
 
     public LayerMask playerLayer;
+    public PlayerController pc;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class FinishManager : MonoBehaviour
 
     void NextLevel()
     {
+        pc.WinMessage();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         Debug.Log("Loading next scene...");
     }
