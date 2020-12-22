@@ -15,11 +15,11 @@ D:/dog game/piesgra
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51773
+53887
 Successfully changed project path to: D:/dog game/piesgra
 D:/dog game/piesgra
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 386.88 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 129.70 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.0f1 (3721df5a8b28)
 [Subsystems] Discovering subsystems at path D:/Unity/2020.2.0f1/Editor/Data/Resources/UnitySubsystems
@@ -35,5 +35,196 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2020.2.0f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2020.2.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity/2020.2.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56984
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56548
 Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2020.2.0f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: D:/Unity/2020.2.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001531 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 34.02 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.910 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001037 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 34.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.907 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1804 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 86.3 MB.
+System memory in use after: 86.3 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2248.
+Total: 3.633300 ms (FindLiveObjects: 0.587400 ms CreateObjectMapping: 0.177000 ms MarkObjects: 2.641200 ms  DeleteObjects: 0.225500 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Sprites/Doggos
+  artifactKey: Guid(8bf0c61ad93002a4697c8c2c4a36e6cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Doggos using Guid(8bf0c61ad93002a4697c8c2c4a36e6cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f105987aea2584a7812ff07c4e0ff45') in 0.048145 seconds
+  Import took 0.051241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.459210 seconds.
+  path: Assets/Sprites
+  artifactKey: Guid(17c62205e42aa2d43903119df20e65b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites using Guid(17c62205e42aa2d43903119df20e65b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e36ea5d4e2ad62eab94ce546203a8ab1') in 0.006795 seconds
+  Import took 0.010025 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001353 seconds.
+  path: Assets/Sprites
+  artifactKey: Guid(17c62205e42aa2d43903119df20e65b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites using Guid(17c62205e42aa2d43903119df20e65b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e36ea5d4e2ad62eab94ce546203a8ab1') in 0.002432 seconds
+  Import took 0.005288 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.739479 seconds.
+  path: Assets/Sprites/Backgrounds
+  artifactKey: Guid(1cb5a80d18809c84a8c6715abcf7b2b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds using Guid(1cb5a80d18809c84a8c6715abcf7b2b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ed6c162c51b3fb8e132e5440ea3d9d7') in 0.008958 seconds
+  Import took 0.012955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.643136 seconds.
+  path: Assets/Sprites/Doggos/ALHPA WOLF.psd
+  artifactKey: Guid(100f6c8edbf42a94fac66993e63bac0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Doggos/ALHPA WOLF.psd using Guid(100f6c8edbf42a94fac66993e63bac0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32d6d3bf50fc35f599b484843cd13a3c') in 0.273995 seconds
+  Import took 0.276732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Sprites/Doggos/MEDIEV DOG.psd
+  artifactKey: Guid(071e68ef9a6d35140b9ded734185fc87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Doggos/MEDIEV DOG.psd using Guid(071e68ef9a6d35140b9ded734185fc87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34c496322d65891d9eeb2afd613894f6') in 0.014953 seconds
+  Import took 0.018097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Sprites/Doggos/PERFECT DOG.psd
+  artifactKey: Guid(f0173f4c391b70741b44948389269836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Doggos/PERFECT DOG.psd using Guid(f0173f4c391b70741b44948389269836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13935f606d31f5dadf633a7934c8a627') in 0.014073 seconds
+  Import took 0.016887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Sprites/Doggos/NOWOŻ DOG.psd
+  artifactKey: Guid(b123fee2ec86def43b34514d9b1f2a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Doggos/NOWOŻ DOG.psd using Guid(b123fee2ec86def43b34514d9b1f2a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99ad2f23f049e31088514266689bf43e') in 0.014403 seconds
+  Import took 0.017487 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/Sprites/Doggos/ANCIENT DOG.psd
+  artifactKey: Guid(f79ede81da84418468e01ce6cd7aa6b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Doggos/ANCIENT DOG.psd using Guid(f79ede81da84418468e01ce6cd7aa6b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80581620d73674ba518a1c21ce050b7d') in 0.054292 seconds
+  Import took 0.057575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002316 seconds.
+  path: Assets/Sprites/Doggos/ANCIENT DOG.psd
+  artifactKey: Guid(f79ede81da84418468e01ce6cd7aa6b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Doggos/ANCIENT DOG.psd using Guid(f79ede81da84418468e01ce6cd7aa6b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80581620d73674ba518a1c21ce050b7d') in 0.015874 seconds
+  Import took 0.019538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.941325 seconds.
+  path: Assets/Sprites/Doggos/ALHPA WOLF.psd
+  artifactKey: Guid(100f6c8edbf42a94fac66993e63bac0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Doggos/ALHPA WOLF.psd using Guid(100f6c8edbf42a94fac66993e63bac0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a4b9b21306c0f2bf04e18bf0cf2d11a') in 0.009449 seconds
+  Import took 0.012790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005067 seconds.
+  path: Assets/Sprites/Doggos/ALHPA WOLF.psd
+  artifactKey: Guid(100f6c8edbf42a94fac66993e63bac0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Doggos/ALHPA WOLF.psd using Guid(100f6c8edbf42a94fac66993e63bac0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a4b9b21306c0f2bf04e18bf0cf2d11a') in 0.010516 seconds
+  Import took 0.013526 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Sprites/Doggos/MEDIEV DOG.psd
+  artifactKey: Guid(071e68ef9a6d35140b9ded734185fc87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Doggos/MEDIEV DOG.psd using Guid(071e68ef9a6d35140b9ded734185fc87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c0a6d602784c70310b55ef4da42402c') in 0.015547 seconds
+  Import took 0.018399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Sprites/Doggos/PERFECT DOG.psd
+  artifactKey: Guid(f0173f4c391b70741b44948389269836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Doggos/PERFECT DOG.psd using Guid(f0173f4c391b70741b44948389269836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09bda456875e0a1428c02e655f468919') in 0.013337 seconds
+  Import took 0.016892 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/Sprites/Doggos/NOWOŻ DOG.psd
+  artifactKey: Guid(b123fee2ec86def43b34514d9b1f2a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Doggos/NOWOŻ DOG.psd using Guid(b123fee2ec86def43b34514d9b1f2a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b3219ad1e777bedb57daa70e24d4a2e') in 0.010147 seconds
+  Import took 0.013579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Sprites/Doggos/ANCIENT DOG.psd
+  artifactKey: Guid(f79ede81da84418468e01ce6cd7aa6b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Doggos/ANCIENT DOG.psd using Guid(f79ede81da84418468e01ce6cd7aa6b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc5b682d94bf03e8c6d0357646918ab0') in 0.127369 seconds
+  Import took 0.130395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 129.877434 seconds.
+  path: Assets/Sprites/Backgrounds/2020-12-19 GAMEJAM cave.png
+  artifactKey: Guid(048a5f4c7ee7e394890f3fdd1b4af440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/2020-12-19 GAMEJAM cave.png using Guid(048a5f4c7ee7e394890f3fdd1b4af440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efae2755fcf261b6e55e30e7a791cdb2') in 0.090201 seconds
+  Import took 0.093744 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/Sprites/Backgrounds/2020-12-19 GAMEJAM smol2.png
+  artifactKey: Guid(ce3743a4b0b684941a16bfef2801fd0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/2020-12-19 GAMEJAM smol2.png using Guid(ce3743a4b0b684941a16bfef2801fd0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a439cb3bdf37b71ae39b6e03ac8cc12b') in 0.015004 seconds
+  Import took 0.017674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.664201 seconds.
+  path: Assets/Sprites/Backgrounds/2020-12-19 GAMEJAM sredniowiecz.png
+  artifactKey: Guid(e38eccf921b410249a19978da2afb8dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/2020-12-19 GAMEJAM sredniowiecz.png using Guid(e38eccf921b410249a19978da2afb8dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5505f43384c2d7a62d35a37d1023bb62') in 0.024928 seconds
+  Import took 0.029299 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
