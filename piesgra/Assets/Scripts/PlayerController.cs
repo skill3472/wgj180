@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
+[SelectionBase]
 public class PlayerController : MonoBehaviour
 {
     public bool isDebugMode = true;
@@ -24,9 +25,19 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI currentMessage;
     public Animation textAnim;
 
+    public Sprite[] allBgs;
+    public Sprite currentBg;
+    public SpriteRenderer BgImage;
+
+    public Transform[] markers;
+    public float mapLength;
+
     // Start is called before the first frame update
     void Start()
     {
+        mapLength = Vector3.Distance(markers[0].position, markers[1].position);
+        currentBg = allBgs[SceneManager.GetActiveScene().buildIndex - 1];
+        BgImage.sprite = currentBg;
         alphaWolf();
         timeLeftToBreathe = 10;
         currentMessage.text = "";
@@ -36,6 +47,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        BackgroundUpdate();
         if(isDebugMode) DebugStuff(); 
         if(breathingToExist) BreatheTest(10);
         isGrounded = Physics2D.OverlapCircle(groundDetector.position, 0.15f, groundLayer);
@@ -156,7 +168,12 @@ public class PlayerController : MonoBehaviour
         currentMessage.text = "You won!";
     }
 
-
+    void BackgroundUpdate()
+    {
+        float imageX;
+        imageX = Mathf.LerpUnclamped(9f, -9f, Camera.main.transform.position.x / mapLength);
+        BgImage.gameObject.transform.localPosition = new Vector3(imageX, 0, 10);
+    }
 
 
     void DebugStuff()
