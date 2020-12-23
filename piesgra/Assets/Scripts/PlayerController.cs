@@ -7,6 +7,7 @@ using TMPro;
 [SelectionBase]
 public class PlayerController : MonoBehaviour
 {
+    private bool flippedLeft;
     public bool isDebugMode = true;
     public LayerMask groundLayer;
     public float speed;
@@ -32,9 +33,15 @@ public class PlayerController : MonoBehaviour
     public Transform[] markers;
     public float mapLength;
 
+    public Sprite[] dogSprites;
+
+    //public Animation[] walkAnim;
+    //public Animation[] jumpAnim;
+
     // Start is called before the first frame update
     void Start()
     {
+        flippedLeft = false;
         mapLength = Vector3.Distance(markers[0].position, markers[1].position);
         currentBg = allBgs[SceneManager.GetActiveScene().buildIndex - 1];
         BgImage.sprite = currentBg;
@@ -54,11 +61,15 @@ public class PlayerController : MonoBehaviour
         horizontalAxis = Input.GetAxis("Horizontal");
 
         playerRb.velocity = new Vector2(horizontalAxis * speed, playerRb.velocity.y);
-
+        if (horizontalAxis >= 0) flippedLeft = false; else flippedLeft = true;
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
             playerRb.AddForce(new Vector2(0, jumpForce));
         }
+        gameObject.GetComponentInChildren<SpriteRenderer>().sprite = dogSprites[currentDogIndex];
+
+        if (flippedLeft) gameObject.GetComponentInChildren<SpriteRenderer>().flipX = true;
+        else gameObject.GetComponentInChildren<SpriteRenderer>().flipX = false;
     }
 
     public void changeDogLevel(int dogLevel)
