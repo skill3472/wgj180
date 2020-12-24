@@ -186,6 +186,14 @@ public class PlayerController : MonoBehaviour
         BgImage.gameObject.transform.localPosition = new Vector3(imageX, 0, 10);
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Respawn")
+        {
+            Death();
+        }
+    }
+
 
     void DebugStuff()
     {
