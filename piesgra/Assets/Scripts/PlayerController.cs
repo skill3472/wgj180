@@ -80,8 +80,7 @@ public class PlayerController : MonoBehaviour
             case 1: wolf(); break;
             case 2: mastif(); break;
             case 3: kundel(); break;
-            case 4: owczarek(); break;
-            case 5: mops(); break;
+            case 4: mops(); break;
         }
     }
 
@@ -121,22 +120,13 @@ public class PlayerController : MonoBehaviour
         currentDogIndex = 3;
     }
 
-    void owczarek()
-    {
-        Debug.Log("PIES TO TERAZ OWCZAREK");
-        speed = 4;
-        jumpForce = 250;
-        breathingToExist = false;
-        currentDogIndex = 4;
-    }
-
     void mops()
     {
         Debug.Log("PIES TO TERAZ MOPS");
         speed = 2;
-        jumpForce = 100;
+        jumpForce = 250;
         breathingToExist = true;
-        currentDogIndex = 5;
+        currentDogIndex = 4;
     }
 
     public void Death()

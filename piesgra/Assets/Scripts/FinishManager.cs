@@ -27,7 +27,15 @@ public class FinishManager : MonoBehaviour
     void NextLevel()
     {
         pc.WinMessage();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        Debug.Log("Loading next scene...");
+        if(SceneManager.GetActiveScene().buildIndex >= 5)
+        {
+            Debug.Log("Loading credits...");
+            SceneManager.LoadScene(6);
+        }
+        else
+        {
+            Debug.Log("Loading next scene...");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 }
